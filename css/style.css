@@ -1,0 +1,184 @@
+/* style.css - Main stylesheet for CSE Portfolio */
+
+:root {
+    --primary: #1d786a;
+    --secondary: #9ac04f;
+    --accent: #1b263b;
+    --text: #222;
+    --white: #fff;
+    --border-radius: 8px;
+    --transition: 0.3s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--secondary);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: var(--primary);
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: background var(--transition);
+}
+
+nav a.active,
+nav a:hover {
+    background: var(--accent);
+}
+
+main {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--white);
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background var(--transition);
+}
+
+.btn:hover {
+    background: var(--accent);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.projects .project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.project {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    padding: 1.5rem;
+    transition: box-shadow var(--transition);
+}
+
+.project:hover {
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.15);
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.skill-icon {
+    display: inline;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin: 0 0.3em;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
+    object-fit: contain;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    resize: vertical;
+}
+
+footer {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+@media (max-width: 700px) {
+    .projects .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    main {
+        padding: 1rem 0.5rem;
+    }
+}
