@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | CSE Portfolio</title>
+    <title>Contact | Paras Rana - CSE Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,23 +20,229 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="contact">
-            <h2>Contact Me</h2>
-            <form class="contact-form">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <button type="submit" class="btn">Send</button>
-            </form>
+        <!-- Hero Section -->
+        <section class="hero" style="padding: 2rem 0 3rem;">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Get In Touch</h1>
+                    <p class="subtitle">Let's connect and create something amazing together</p>
+                    <p class="description">
+                        I'm always open to discussing new opportunities, collaborating on projects, or just having 
+                        a conversation about technology and development. Feel free to reach out!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Methods -->
+        <section>
+            <div class="container">
+                <h2>Ways to Connect</h2>
+                <p class="section-subtitle">Choose the method that works best for you</p>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <h3>📧 Email</h3>
+                        <p style="margin-bottom: 1rem;">
+                            For professional inquiries, collaboration opportunities, or detailed discussions.
+                        </p>
+                        <a href="mailto:paras.rana@example.com" class="btn" style="font-size: 0.9rem;">
+                            paras.rana@example.com
+                        </a>
+                    </div>
+                    <div class="card">
+                        <h3>💼 LinkedIn</h3>
+                        <p style="margin-bottom: 1rem;">
+                            Connect with me professionally and stay updated with my latest achievements and projects.
+                        </p>
+                        <a href="https://linkedin.com/in/paras-rana" class="btn" style="font-size: 0.9rem;" target="_blank">
+                            View LinkedIn Profile
+                        </a>
+                    </div>
+                    <div class="card">
+                        <h3>🐙 GitHub</h3>
+                        <p style="margin-bottom: 1rem;">
+                            Explore my code, contribute to my projects, or discuss technical implementations.
+                        </p>
+                        <a href="https://github.com/paras-rana" class="btn" style="font-size: 0.9rem;" target="_blank">
+                            View GitHub Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section style="background: var(--background-alt);">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 style="text-align: center;">Send Me a Message</h2>
+                    <p class="section-subtitle">
+                        Have a project in mind? Want to collaborate? Or just want to say hello? 
+                        I'd love to hear from you!
+                    </p>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required 
+                                placeholder="Tell me about your project, idea, or just say hello..."></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media & Professional Links -->
+        <section>
+            <div class="container">
+                <h2>Connect on Social Media</h2>
+                <p class="section-subtitle">Follow my journey and stay updated with my latest work</p>
+                <div class="social-links">
+                    <a href="https://github.com/paras-rana" class="social-link" target="_blank" title="GitHub">
+                        <span style="font-size: 1.25rem;">🐙</span>
+                    </a>
+                    <a href="https://linkedin.com/in/paras-rana" class="social-link" target="_blank" title="LinkedIn">
+                        <span style="font-size: 1.25rem;">💼</span>
+                    </a>
+                    <a href="https://twitter.com/paras_rana" class="social-link" target="_blank" title="Twitter">
+                        <span style="font-size: 1.25rem;">🐦</span>
+                    </a>
+                    <a href="https://instagram.com/paras.rana" class="social-link" target="_blank" title="Instagram">
+                        <span style="font-size: 1.25rem;">📷</span>
+                    </a>
+                    <a href="mailto:paras.rana@example.com" class="social-link" title="Email">
+                        <span style="font-size: 1.25rem;">📧</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section style="background: var(--background-alt);">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3>🤝 Collaboration</h3>
+                        <h4 style="color: var(--primary); margin-bottom: 0.5rem;">What type of projects do you work on?</h4>
+                        <p style="margin-bottom: 1rem; color: var(--text-light);">
+                            I enjoy working on web development projects, from simple landing pages to complex web applications. 
+                            I'm also interested in algorithmic challenges and software development projects.
+                        </p>
+                        <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Are you available for freelance work?</h4>
+                        <p style="color: var(--text-light);">
+                            As a student, I have limited availability but I'm open to discussing interesting projects that 
+                            align with my learning goals and schedule.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>📚 Learning & Mentorship</h3>
+                        <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Can you help me learn programming?</h4>
+                        <p style="margin-bottom: 1rem; color: var(--text-light);">
+                            I'd be happy to share my learning resources and experiences. While I'm still learning myself, 
+                            I believe in the power of peer-to-peer learning and knowledge sharing.
+                        </p>
+                        <h4 style="color: var(--primary); margin-bottom: 0.5rem;">How long does it usually take to respond?</h4>
+                        <p style="color: var(--text-light);">
+                            I typically respond to emails and messages within 24-48 hours. For urgent matters, 
+                            LinkedIn might be a faster way to reach me.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location & Availability -->
+        <section>
+            <div class="container">
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3>📍 Location & Availability</h3>
+                        <div style="margin-top: 1.5rem;">
+                            <p style="margin-bottom: 1rem;">
+                                <strong>Location:</strong> India<br>
+                                <strong>Time Zone:</strong> IST (UTC+5:30)
+                            </p>
+                            <p style="margin-bottom: 1rem;">
+                                <strong>Availability:</strong><br>
+                                Mon-Fri: 6:00 PM - 10:00 PM<br>
+                                Weekends: 10:00 AM - 8:00 PM
+                            </p>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">
+                                *Times may vary due to academic schedule
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>🎯 Current Focus</h3>
+                        <div style="margin-top: 1.5rem;">
+                            <p style="margin-bottom: 1rem;">
+                                I'm currently focused on:
+                            </p>
+                            <ul style="color: var(--text-light); line-height: 1.8;">
+                                <li>Completing my CSE degree</li>
+                                <li>Building portfolio projects</li>
+                                <li>Learning modern web frameworks</li>
+                                <li>Contributing to open-source</li>
+                                <li>Networking with fellow developers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section style="background: var(--primary); color: white;">
+            <div class="container">
+                <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                    <h2 style="color: white;">Ready to Start a Conversation?</h2>
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.9;">
+                        Whether you have a project idea, want to collaborate, or just want to connect, 
+                        I'm excited to hear from you. Let's build something amazing together!
+                    </p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="mailto:paras.rana@example.com" class="btn" style="background: white; color: var(--primary);">
+                            Send Email
+                        </a>
+                        <a href="https://linkedin.com/in/paras-rana" class="btn btn-secondary" 
+                           style="border-color: white; color: white;" target="_blank">
+                            Connect on LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Paras Rana. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Paras Rana. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script>
+        // Simple form handling
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I\'ll get back to you soon.');
+            this.reset();
+        });
+    </script>
 </body>
 
 </html>
