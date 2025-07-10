@@ -24,8 +24,12 @@
   <main>
     <!-- Hero Section -->
     <section class="hero">
+      <div class="floating-shapes"></div>
       <div class="container">
         <div class="hero-content">
+          <div class="profile-picture">
+            <img src="./images/profile-photo.jpg" alt="Paras Rana" />
+          </div>
           <h1>Hello, I'm Paras Rana</h1>
           <p class="subtitle">Computer Science Engineering Student</p>
           <p class="description">
@@ -42,7 +46,7 @@
     </section>
 
     <!-- Quick Stats -->
-    <section>
+    <section class="pattern-bg">
       <div class="container">
         <div class="stats">
           <div class="stat">
@@ -75,15 +79,18 @@
         </p>
         <div class="grid grid-3">
           <div class="card">
-            <h3>💻 Web Development</h3>
+            <div style="font-size: 3rem; margin-bottom: 1rem;">💻</div>
+            <h3>Web Development</h3>
             <p>Building responsive and interactive web applications using modern technologies like HTML, CSS, JavaScript, and various frameworks.</p>
           </div>
           <div class="card">
-            <h3>🔧 Software Engineering</h3>
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🔧</div>
+            <h3>Software Engineering</h3>
             <p>Developing robust software solutions with clean code practices, focusing on scalability and maintainability.</p>
           </div>
           <div class="card">
-            <h3>🧠 Problem Solving</h3>
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🧠</div>
+            <h3>Problem Solving</h3>
             <p>Tackling complex challenges through algorithmic thinking and creative solutions. Always eager to learn new approaches.</p>
           </div>
         </div>
@@ -91,18 +98,21 @@
     </section>
 
     <!-- Featured Projects -->
-    <section>
+    <section style="background: var(--background-alt);">
       <div class="container">
         <h2>Featured Projects</h2>
         <p class="section-subtitle">Some of my recent work that I'm particularly proud of</p>
         <div class="grid grid-2">
           <div class="card project">
+            <div class="project-image portfolio">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portfolio Website" />
+            </div>
             <h3>Portfolio Website</h3>
             <p>A modern, responsive portfolio website showcasing my skills and projects. Built with clean HTML, CSS, and JavaScript.</p>
             <div class="project-tech">
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag"><span class="tech-icon html"></span>HTML</span>
+              <span class="tech-tag"><span class="tech-icon css"></span>CSS</span>
+              <span class="tech-tag"><span class="tech-icon js"></span>JavaScript</span>
               <span class="tech-tag">Responsive Design</span>
             </div>
             <div class="project-links">
@@ -110,6 +120,9 @@
             </div>
           </div>
           <div class="card project">
+            <div class="project-image auction">
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Auction Website" />
+            </div>
             <h3>Auction Website</h3>
             <p>An interactive auction platform where users can buy and sell products with real-time bidding functionality.</p>
             <div class="project-tech">
@@ -129,26 +142,28 @@
     </section>
 
     <!-- Skills Preview -->
-    <section style="background: var(--background-alt);">
+    <section class="dots-bg">
       <div class="container">
         <h2>Technical Skills</h2>
         <p class="section-subtitle">Technologies and tools I work with</p>
         <div class="grid grid-2">
           <div class="card">
-            <h3>🌐 Frontend</h3>
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">🌐</div>
+            <h3>Frontend</h3>
             <div class="skill-list">
-              <span class="skill-item">HTML</span>
-              <span class="skill-item">CSS</span>
-              <span class="skill-item">JavaScript</span>
+              <span class="skill-item"><span class="tech-icon html"></span>HTML</span>
+              <span class="skill-item"><span class="tech-icon css"></span>CSS</span>
+              <span class="skill-item"><span class="tech-icon js"></span>JavaScript</span>
               <span class="skill-item">Responsive Design</span>
             </div>
           </div>
           <div class="card">
-            <h3>⚙️ Programming</h3>
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">⚙️</div>
+            <h3>Programming</h3>
             <div class="skill-list">
               <span class="skill-item">C</span>
-              <span class="skill-item">C++</span>
-              <span class="skill-item">Python</span>
+              <span class="skill-item"><span class="tech-icon cpp"></span>C++</span>
+              <span class="skill-item"><span class="tech-icon python"></span>Python</span>
               <span class="skill-item">Problem Solving</span>
             </div>
           </div>
@@ -182,6 +197,9 @@
       <p>&copy; 2025 Paras Rana. All rights reserved.</p>
     </div>
   </footer>
+  
+  <!-- Theme Toggle Script -->
+  <script src="js/theme-toggle.js"></script>
 </body>
 
 </html>
